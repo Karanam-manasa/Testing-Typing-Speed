@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Typing Master</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Title -->
+    <h2 style="position:absolute; margin-top:-40%; color:#ffffff; text-align: center; width: 100%;">Test Your Typing Speed</h2>
+    
+    <!-- Typing Test Wrapper -->
+    <div class="wrapper">
+      <!-- Input Field -->
+      <input type="text" class="input-field" placeholder="Start typing here..." autofocus>
+
+      <!-- Content Box -->
+      <div class="content-box">
+        <!-- Typing Text -->
+        <div class="typing-text">
+          <p></p>
+        </div>
+
+        <!-- Results and Actions -->
+        <div class="content">
+          <ul class="result-details">
+            <li class="time">
+              <p>Time Left:</p>
+              <span><b>60</b>s</span>
+            </li>
+            <li class="mistake">
+              <p>Mistakes:</p>
+              <span>0</span>
+            </li>
+            <li class="wpm">
+              <p>WPM:</p>
+              <span>0</span>
+            </li>
+            <li class="cpm">
+              <p>CPM:</p>
+              <span>0</span>
+            </li>
+            <li class="accuracy">
+              <p>Accuracy:</p>
+              <span>100%</span>
+            </li>
+            
+          </ul>
+          <!-- Play Again Button -->
+          <button>Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result Popup Modal -->
+    <div class="modal-overlay" style="display: none;"></div>
+    <div class="modal" style="display: none;">
+      <h2>Results</h2>
+     
+      <p><strong>Mistakes:</strong> <span id="modal-mistakes">0</span></p>
+      <p><strong>WPM:</strong> <span id="modal-wpm">0</span></p>
+      <p><strong>CPM:</strong> <span id="modal-cpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="modal-accuracy">100%</span></p>
+
+      <button id="close-modal">Close</button>
+    </div>
+    <!-- Modal Structure -->
+<div class="modal-overlay" style="display: none;"></div>
+<div class="modal" style="display: none;">
+  <h2>Result</h2>
+  <p><strong>WPM:</strong> <span id="modal-wpm">0</span></p>
+  <p><strong>CPM:</strong> <span id="modal-cpm">0</span></p>
+  <p><strong>Mistakes:</strong> <span id="modal-mistakes">0</span></p>
+  <button id="close-modal">Close</button>
+</div>
+
+
+    <!-- Scripts -->
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
